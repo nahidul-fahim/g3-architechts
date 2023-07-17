@@ -354,27 +354,6 @@ footer {
 
     /* TEAM SECTION RESPONSIVE */
 
-    /* .team {
-        flex-direction: column;
-        justify-content: center;
-        gap: 3rem;
-    }
-
-    .team-images {
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-column-gap: 0rem;
-        grid-row-gap: 1rem;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .team-contents {
-        width: 100vmin;
-        align-items: center;
-        /* padding: 0 20px;   PADDING IS NOT WORKING HERE 
-    } */
-
     .team {
         flex-direction: column;
         gap: 4rem;
