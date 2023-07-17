@@ -42,6 +42,14 @@ body {
     line-height: 26px;
 }
 
+.secondary-title {
+    color: #131313;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
 /* GLOBAL STYLE ENDS HERE */
 
 
@@ -127,22 +135,23 @@ body {
 
 /* WEBSITE HEADER ENDS HERE */
 
-/* FEATURES SECTION STARTS HERE */
+
+/* TEAM SECTION STARTS HERE */
 
 main {
     margin: 0 auto;
     max-width: 1140px;
-    margin-top: 85px;
+    margin-top: 8rem;
 }
 
-.features {
+.team {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 4.4rem;
 }
 
-.features-images {
+.team-images {
     width: 60%;
     display: grid;
     grid-template: auto / repeat(2, 1fr);
@@ -150,7 +159,7 @@ main {
     grid-row-gap: 1rem;
 }
 
-.features .features-contents {
+.team .team-contents {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -168,7 +177,69 @@ main {
     color: #FF900E;
 }
 
-/* FEATURES SECTION ENDS HERE
+/* TEAM SECTION ENDS HERE */
+
+
+/* FEATURES SECTION STARTS HERE */
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-top: 8rem;
+}
+
+.features-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    max-width: 470px;
+}
+
+.features-left .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.features-single {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.features-right {
+    max-width: 550px;
+}
+
+.features-right img {
+    width: 99%;
+}
+
+.ten-year {
+    background-color: #FF900E;
+    color: white;
+    padding: 40px;
+    width:fit-content;
+    text-align: center;
+    border-radius: 7px;
+    position: relative;
+    top: -90px;
+    left: -50px;
+}
+
+.ten-year .section-title {
+    color: white;
+}
+
+/* FEATURES SECTION ENDS HERE */
+
+
 
 
 /* RESPONSIVE SECTION STARTS HERE */
@@ -201,14 +272,15 @@ main {
         margin-top: 50px;
     }
 
-    /* FEATURES SECTION RESPONSIVE */
+    /* TEAM SECTION RESPONSIVE */
 
-    .features {
+    .team {
         flex-direction: column;
         justify-content: center;
         gap: 3rem;
     }
-    .features-images {
+
+    .team-images {
         width: 100%;
         grid-template-columns: 1fr;
         grid-column-gap: 0rem;
@@ -216,11 +288,48 @@ main {
         justify-items: center;
         align-items: center;
     }
-    .features .features-contents {
+
+    .team .team-contents {
         width: 100vmin;
         align-items: center;
-        padding: 0 20px; /* PADDING IS NOT WORKING HERE */
+        /* padding: 0 20px;   PADDING IS NOT WORKING HERE */
     }
 
-    
+    /* FEATURE SECTION RESPONSIVE */
+
+    .features {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 8rem;
+    }
+
+    .features-left {
+        max-width: 100vmin;
+        padding: 20px;
+    }
+
+    .features-right {
+        max-width: 100vmin;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .features-right img {
+        width: 95%;
+    }
+
+    .ten-year {
+        background-color: #FF900E;
+        color: white;
+        padding: 30px 0;
+        width: 95%;
+        text-align: center;
+        border-radius: 7px;
+        position: static;
+        margin-top: 10px;
+    }
 }
